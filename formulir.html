@@ -1,0 +1,42 @@
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>HOME</title>
+        <link rel="stylesheet" href="tampilan.css">
+    </head>
+    <body>
+        <div class="sidebar">
+            <h5><img src="dys.jpg" alt=""></br>Astry Dyastari</br></br>F55118259</h5>
+            <ul>
+                <li><a href="data.html">Data</a></li>
+                <li><a href="formulir.html">Formulir</a></li>
+                <li><a href="logout.html">Logout</a></li>
+            </ul>
+        </div>
+        <div class="content">
+        <form action="proses.php" method="get">
+            <h1 align="center" color="black" size="5" face="Times New Roman"><b>Halaman Registrasi<b></h1>
+        <table align="center" border="0" >
+            <tr><td>NIM<td><input type="text" name="stbk" /></td></td></tr>
+            <tr><td>Nama Depan<td><input type="text" name="firstname" /></td></td></tr>
+            <tr><td>Nama Belakang<td><input type="text" name="lastname" /></td></td></tr>
+            <tr><td>Tanggal Lahir<td><input type="Date" name="ttl"></td></td></tr>
+            <tr><td>Agama<td><select name="agama">
+                <option value="" selected="selected" />
+                <option value="islam">Islam</option>
+                <option value="kristen">Kristen</option>
+                <option value="hindu">Hindu</option>
+                <option value="budha">Budha</option></td></td></tr>
+            <tr><td>Jenis Kelamin</td><td><input type="radio" name="jenis_kelamin" value="laki-laki" />
+            Laki-laki<input type="radio" name="jenis_kelamin" value="perempuan" /> 
+            Perempuan</td></tr>
+            <tr><td>Alamat<td><textarea rows="3" cols="25" name="alamat"></textarea></td></td></tr>
+            <tr><td>E-mail<td><input type="text" name="email" /></td></td></tr>
+            <tr><td>No. Telpon<td><input type="number" name="nohp" /></td></td></tr>
+            <tr><td>Upload Foto<td><input type="file" name="gambar" /></td></td></tr>
+            <tr><td><td><input type="submit" value="Simpan" /> <input type="reset" value="Reset" /></td></td></tr>
+        </table>
+        </form>
+        </div>
+    </body>
+</html>
